@@ -1,0 +1,183 @@
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			text-transform: capitalize;
+		}
+		.menu{
+			background-color: #333;
+			position: sticky;
+			top: 0;
+			height: 60px;
+			z-index: 1;
+		}
+		.menu a{
+			display: inline-block;
+			padding: 22px 30px;
+			color: #fff;
+			text-decoration: none;
+		}
+		.menu a:hover{
+			background-color: #666;
+		}
+		.hidden{
+			position: sticky;
+			top: 0;
+			display: none;
+			padding: 22px 30px;
+			color: #fff;
+			text-decoration: none;
+			background-color: #333;
+		}
+		.hidden:hover{
+			background-color: #666;
+		}
+		.header{
+			background: url("02 (1).jpg") center center/cover no-repeat;
+			color: indianred;
+			text-align: center;
+			padding: 100px 80px 190px;
+			font-size: 1.5em;
+			line-height: 2em;
+			font-family: Candara;
+		}
+		.header p{
+			font-weight: bold;
+		}
+		.music{
+			background-color: #222;
+			color: #fff;
+			padding: 20px 80px;
+			text-align: center;
+			line-height: 2em;
+			font-size: 1.4em;
+		}
+		.music span{
+			font-size: 1.5em;
+		}
+		.music a{
+			padding: 12px 20px;
+			background-color: indianred;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 2px;
+		}
+		.music a:hover{
+			background-color: coral;
+		}
+		audio{
+			width: 40%;
+		}
+		.share{
+			padding: 20px 40px;
+			text-align: center;
+			line-height: 2em;
+			color: #555;
+		}
+		.share p{
+			font-size: 1.3em;
+		}
+		.share a{
+			padding: 15px 30px;
+			text-decoration: none;
+			color: #fff;
+			background-color: indianred;
+			font-size: 1.5em;
+			border-radius: 3px;
+		}
+		.share a:hover{
+			background-color: coral;
+		}
+		.share img{
+			border-radius: 50px;
+		}
+		.sky{
+			font-size: 1.3em;
+			background: url("news_preview2_164.jpg") center center/100% 100% no-repeat;
+			padding: 150px 40px;
+			text-align: center;
+			color: #fff;
+		}
+		.sky p{
+			color: salmon;
+			font-weight: bold;
+		}
+		.flex{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.flex div{
+			width: 50%;
+		}
+		.flex .text{
+			padding-right: 60px;
+			padding-top: 80px;
+			color: #333;
+		}
+		.flex span{
+			font-weight: bold;
+			font-size: 1.6em;
+		}
+		.flex a{
+			text-decoration: none;
+			color: darkblue;
+		}
+		.flex a:hover{
+			color: teal;
+		}
+		.flex-footer{
+			display: flex;
+			justify-content: space-around;
+			background-color: #222;
+			padding: 20px 60px;
+		}
+		.flex-footer div{
+			width: 15%;
+			line-height: 1.8em;
+		}
+		.flex-footer a{
+			display: block;
+			color: #bbb;
+			text-decoration: none;
+		}
+		.flex-footer a:hover{
+			color: #fff;
+		}
+		.flex-footer h3{
+			color: #fff;
+		}
+		.footer{
+			background-color: #666;
+			text-align: center;
+			color: #ddd;
+			padding :20px 0;
+		}
+		@media screen and (max-width: 768px){
+			.header{
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+			.flex div{
+				width: 100%;
+			}
+			.flex .text{
+				text-align: center;
+				padding: 20px;
+			}
+			.menu a{
+				padding: 15px 5px;
+			}
+			.menu{
+				display: none;
+				padding-left: 25px;
+			}
+			.hidden{
+				display: block;
+			}
+		}
+		@media screen and (min-width: 768px){
+			.menu{
+				display: block;
+			}
+		}
